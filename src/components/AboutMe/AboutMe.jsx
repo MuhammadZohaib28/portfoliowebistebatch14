@@ -2,7 +2,55 @@ import './aboutme.css'
 
 const AboutMe = () => {
     return (
-        <div>AboutMe</div>
+        <div className='aboutme'>
+            <h1 className='aboutme-title'>About Me</h1>
+
+
+            <div className='aboutme-bottom'>
+
+
+                <div className='aboutme-image'>
+                    <img src="https://muhammadzuhaib.vercel.app/assets/zohaib's%20picture-409e52cc.png" alt="Profile Picture" />
+
+                </div>
+
+
+
+                <div className='aboutme-bottom-right'>
+
+                    <div className='aboutme-paragraph'>
+                        <p>I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+
+                        <p>My passion for frontend development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
+                    </div>
+
+
+                    <div className='aboutme-skills'>
+
+                        <h3>HTML & CSS</h3>
+                        <span></span>
+
+                        <h3>JavaScript</h3>
+                        <span></span>
+
+
+                        <h3>React</h3>
+                        <span></span>
+
+
+                        <h3>Node.js</h3>
+                        <span></span>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
     )
 }
 

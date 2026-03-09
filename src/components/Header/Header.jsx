@@ -26,18 +26,22 @@ const Header = () => {
     ]
 
     return (
-        <header>
-            <h1>MAZHAR</h1>
+        <header className='header'>
+            <h1 className='gradient-text'>NSFB14</h1>
 
-            <ul>
+            <ul className='menu-items'>
 
                 {menuItems.map((item, index) => (
                     <li key={index}>{item.name}</li>
                 ))}
 
             </ul>
+
+            <button>Contact Me</button>
         </header>
     )
 }
+
+
 
 export default Header
