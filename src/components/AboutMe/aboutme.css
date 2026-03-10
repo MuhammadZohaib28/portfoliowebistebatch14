@@ -1,4 +1,4 @@
-.aboutme{
+.aboutme {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 
-.aboutme-bottom{
+.aboutme-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,14 +29,14 @@
     border-radius: 10%;
 }
 
-.aboutme-bottom-right{
+.aboutme-bottom-right {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 80%;
 }
 
-.aboutme-paragraph{
+.aboutme-paragraph {
     font-size: 1.2rem;
     color: #333333;
     line-height: 1.5;
@@ -47,7 +47,7 @@
 }
 
 
-.aboutme-skills{
+.aboutme-skills {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -55,12 +55,120 @@
 }
 
 
-.aboutme-skills span{
-    padding: 10px 20px;
-    background-color: #f8a1a1;
-    color: #262626;
-    border-radius: 50px;
-    font-size: 1rem;
+
+
+.aboutme-skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+
+.aboutme-skill {
+    position: relative;
+    width: 85%;
+    background-color: rgb(195, 195, 195);
+    height: 1.4rem;
+
+    border-radius: 1rem;
 }
 
 
+
+.aboutme-skill .htmlcss {
+    position: absolute;
+    top: 0;
+    /* background-color: white; */
+    width: 60%;
+    height: 1.4rem;
+    border-radius: 1rem;
+
+}
+
+
+.aboutme-skill .javascript {
+    position: absolute;
+    top: 0;
+    /* background-color: rgb(81, 81, 81); */
+    width: 90%;
+    height: 1.4rem;
+    border-radius: 1rem;
+
+}
+
+
+.aboutme-skill .react {
+    position: absolute;
+    top: 0;
+    /* background-color: rgb(81, 81, 81); */
+    width: 84%;
+    height: 1.4rem;
+    border-radius: 1rem;
+
+}
+
+
+.aboutme-skill .nodejs {
+    position: absolute;
+    top: 0;
+    /* background-color: rgb(81, 81, 81); */
+    width: 78%;
+    height: 1.4rem;
+    border-radius: 1rem;
+
+}
+
+.nodejs::before {
+    content: "78%";
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    left: 100%;
+
+
+}
+
+
+.htmlcss::before {
+    content: "60%";
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    left: 100%;
+
+
+}
+
+
+
+.react::before {
+    content: "84%";
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    left: 100%;
+
+
+}
+
+
+.javascript::before {
+    content: "90%";
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    left: 100%;
+}
+
+.bar-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+
+}

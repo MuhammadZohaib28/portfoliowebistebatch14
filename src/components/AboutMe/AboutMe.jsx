@@ -27,19 +27,41 @@ const AboutMe = () => {
 
                     <div className='aboutme-skills'>
 
-                        <h3>HTML & CSS</h3>
-                        <span></span>
 
-                        <h3>JavaScript</h3>
-                        <span></span>
+                        <div className='bar-section'>
+
+                            <h3>HTML & CSS</h3>
+                            <div className='aboutme-skill'>
+                                <span className='htmlcss gradient-bg'></span>
+                            </div>
+                        </div>
 
 
-                        <h3>React</h3>
-                        <span></span>
+                        <div className='bar-section'>
+
+                            <h3>JavaScript</h3>
+                            <div className='aboutme-skill '>
+                                <span className='javascript gradient-bg'></span>
+                            </div>
+                        </div>
 
 
-                        <h3>Node.js</h3>
-                        <span></span>
+                        <div className='bar-section'>
+
+                            <h3>React</h3>
+                            <div className='aboutme-skill'>
+                                <span className='react gradient-bg'></span>
+                            </div>
+                        </div>
+
+
+                        <div className='bar-section'>
+
+                            <h3>Node.js</h3>
+                            <div className='aboutme-skill'>
+                                <span className='nodejs gradient-bg'></span>
+                            </div>
+                        </div>
 
 
 
