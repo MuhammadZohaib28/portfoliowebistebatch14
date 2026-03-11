@@ -3,9 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 50px);
     background-color: #f9f9f9;
+    /* background-color: #fd7373; */
     gap: 2rem;
+    border-radius: 2rem;
+    
 }
 
 
