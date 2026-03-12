@@ -3,21 +3,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     background-color: #f9f9f9;
-    /* background-color: #fd7373; */
     gap: 2rem;
     border-radius: 2rem;
-    
+    padding: 40px 20px;
 }
-
 
 .profile-picture {
     width: 250px;
     height: 250px;
     background-color: #ffffff;
     border-radius: 50%;
-
 }
 
 .profile-picture img {
@@ -31,16 +28,14 @@
     color: #333333;
     width: 80%;
     text-align: center;
-    line-height: 3rem;
+    line-height: 3.2rem;
 }
 
 .main-title span {
-    background: #833AB4;
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .main-detail {
     font-size: 1rem;
@@ -55,7 +50,7 @@
 }
 
 .buttons button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #f0f0f0;
     color: #262626;
     border: none;
@@ -64,9 +59,75 @@
     font-size: 1rem;
 }
 
-
 .buttons button:hover {
     background-color: #262626;
     color: #f0f0f0;
     transition: all 0.3s ease;
+}
+
+/* 📱 Tablet */
+
+@media (max-width: 1024px) {
+
+    .main-title {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    .main-detail {
+        width: 80%;
+    }
+
+}
+
+/* 📱 Mobile */
+
+@media (max-width: 768px) {
+
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+        width: 100%;
+        line-height: 2.2rem;
+    }
+
+    .main-detail {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 80%;
+    }
+
+}
+
+/* 📱 Small Mobile */
+
+@media (max-width: 480px) {
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .main-detail {
+        font-size: 0.9rem;
+    }
+
 }

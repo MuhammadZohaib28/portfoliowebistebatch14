@@ -26,7 +26,7 @@ const AboutMe = () => {
 
 
                     <div className='aboutme-skills'>
-
+            
 
                         <div className='bar-section'>
 
