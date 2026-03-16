@@ -1,16 +1,19 @@
 import { useState } from "react";
 import "./header.css";
+import { Link } from "react-scroll";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const menuItems = [
-        { name: "Home", link: "/home" },
-        { name: "About Me", link: "/aboutme" },
-        { name: "Services", link: "/services" },
-        { name: "Portfolio", link: "/portfolio" },
-        { name: "Contact", link: "/contact" }
+        { name: "Home", link: "home" },
+        { name: "About Me", link: "aboutme" },
+        { name: "Services", link: "services" },
+        { name: "Portfolio", link: "portfolio" },
+        { name: "Contact", link: "contact" }
     ];
+
+
 
     return (
         <header className="header">
@@ -19,7 +22,11 @@ const Header = () => {
 
             <ul className="menu-items">
                 {menuItems.map((item, index) => (
-                    <li key={index}>{item.name}</li>
+                    <li key={index}>
+                        <Link to={item.link} smooth={true} duration={500} offset={-70} activeClass="active-menu-item" spy={true}>
+                            {item.name}
+                        </Link>
+                    </li>
                 ))}
             </ul>
 
@@ -42,11 +49,15 @@ const Header = () => {
                     ✕
                 </button>
 
-                    
+
 
                 <ul>
                     {menuItems.map((item, index) => (
-                        <li key={index}>{item.name}</li>
+                        <li key={index} className="menu-item-single">
+                            <Link to={item.link} smooth={true} duration={500} offset={-70} activeClass="active-menu-item" spy={true}>
+                                {item.name}
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </div>
